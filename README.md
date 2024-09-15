@@ -6,6 +6,8 @@ This project focuses on building, tuning, and evaluating a deep learning model t
 
 ## Project workflow
 
+- [Exploratory Data Analysis](notebooks\exploratory_analysis.ipynb)
+
 ## Resources
 
 - [Dataset on Kaggle](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) : See additional info
