@@ -1,4 +1,4 @@
-# Tumor_Detection_MRI
+# MRI-Based Brain Tumor Detection Using TensorFlow
 
 ## Project goal
 
