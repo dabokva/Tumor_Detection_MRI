@@ -6,7 +6,7 @@ This project focuses on building, tuning, and evaluating a deep learning model t
 
 ## Project workflow
 
-- [Exploratory Data Analysis](../notebooks/exploratory_analysis.ipynb)
+- [Exploratory Data Analysis](notebooks/exploratory_analysis.ipynb)
 
 ## Resources
 
