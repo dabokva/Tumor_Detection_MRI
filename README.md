@@ -8,6 +8,7 @@ This project focuses on building, tuning, and evaluating a deep learning model t
 
 - [Exploratory Data Analysis](notebooks/exploratory_analysis.ipynb)
 - [Preprocessing](notebooks/preprocessing.ipynb)
+- [Modelling](notebooks/modelling.ipynb)
 
 ## Resources
 
