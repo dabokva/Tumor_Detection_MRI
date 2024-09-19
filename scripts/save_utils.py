@@ -1,28 +1,36 @@
-import os
 import pickle
+import pandas as pd
 
-default_value = 0
+def save_data(object, category, file_path):
 
-def save_data(file_path, *variables):
-    try:
+    with open('..\\save_files\\saved_data.pkl', 'rb') as file:
+        saved_data = pickle.load(file)
+
+    if file_path in saved_data['path'].values:
         with open(file_path, 'wb') as file:
-            if len(variables) == 1:
-                pickle.dump(variables[0], file)
-            else:
-                pickle.dump(variables, file)
-        print(f"all variables have been successfully saved to {file_path}.")
-    except Exception as e:
-        print(f"an error occurred while saving data: {e}")
-
-def loader(file_path):
-    if os.path.exists(file_path):
-        try:
-            with open(file_path, 'rb') as file:
-                variables = pickle.load(file)
-                return variables
-        except Exception as e:
-            print(f"an error occurred while loading data: {e}")
-            return default_value
+            pickle.dump(object, file)
+        with open('..\\save_files\\saved_data.pkl', 'wb') as file:
+            pickle.dump(saved_data, file)
+        print(f'object successfuly saved to: {file_path}')
     else:
-        print(f'file not found: {file_path}')
-        return default_value
+        saved_data = pd.concat([saved_data, pd.DataFrame({'path': [file_path], 'object':[object], 'category':[category]})], ignore_index=True)
+        with open(file_path, 'wb') as file:
+            pickle.dump(object, file)
+        with open('..\\save_files\\saved_data.pkl', 'wb') as file:
+            pickle.dump(saved_data, file)
+        print(f'object successfuly saved to: {file_path}')
+
+def load_data(file_path):
+
+    with open('..\\save_files\\saved_data.pkl', 'rb') as file:
+        saved_data = pickle.load(file)
+
+    if file_path in saved_data['path'].values:
+        with open(file_path, 'rb') as file:
+            result = pickle.load(file)
+            return result
+    else:
+        print('error: no such file')
+        return None
+
+
