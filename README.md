@@ -4,6 +4,10 @@
 
 This project focuses on building, tuning, and evaluating a deep learning model to accurately detect whether a person has a brain tumor, and if so, to classify the type of tumor.
 
+## Recent updates:
+
+Currently, I'm working on the following branch: [Additional experiments with augmented data](https://github.com/dabokva/Tumor_Detection_MRI/tree/aug_add_training)
+
 ## Project workflow
 
 - [Exploratory Data Analysis](notebooks/exploratory_analysis.ipynb)
