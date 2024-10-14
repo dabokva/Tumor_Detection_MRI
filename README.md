@@ -6,7 +6,7 @@ This project focuses on building, tuning, and evaluating a deep learning model t
 
 ## Recent updates:
 
-Currently, I'm working on the following branch: [Additional experiments with augmented data](https://github.com/dabokva/Tumor_Detection_MRI/tree/aug_add_training)
+Currently, I'm working on the following branch: [More tuning](https://github.com/dabokva/Tumor_Detection_MRI/tree/more_tuning)
 
 ## Project workflow
 
