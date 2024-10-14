@@ -9,8 +9,7 @@ __pycache__/
 # Ignore files
 data/raw/
 scripts/image_preprocessing.ipynb
-save_files/baseline.h5
-save_files/augmented.h5
+save_files/models/
 
 # Distribution / packaging
 .Python
